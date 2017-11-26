@@ -21,7 +21,7 @@ module.exports = (robot) => {
 
     robot.hear(/ いいね|やるね|nice|面白い|おもしろ/i, (msg) => {
         const username = msg.message.user.name;
-        const thanks = ['あざっす！！',  'Thanks!!','ニャヒヒ',  '頑張ります！'];
+        const thanks = ['あざっす！！',  'Thanks!!','ニャヒヒ',  '頑張ります!'];
         const thank = thanks[Math.floor(Math.random() * thanks.length)];
         msg.send(thank);
     });
